@@ -121,6 +121,22 @@ s0.init({ src: myCanvas, dynamic: false })
 
 src(s0).diff(osc(2, 0.1, 1.2).kaleid([1,-0.0002,30,400,0.00004]).color(-0.01).colorama(0.0005)).out()
 
+myCanvas = document.createElement('canvas')
+ctx = myCanvas.getContext('2d')
+ctx.font = "20px Arial"
+ctx.fillStyle = "red";
+ctx.fillText("bungalore", 10, 50)   
+
+s0.init({ src: myCanvas, dynamic: false })
+
+myCanvas = document.createElement('canvas')
+ctx = myCanvas.getContext('2d')
+ctx.font = "20px Arial"
+ctx.fillStyle = "pink";
+ctx.fillText("Gabi makes things", 10, 140)
+s0.init({ src: myCanvas, dynamic: false })
+src(s0).diff(osc(2, 1, 10,3,4)).out()
+
 //BUNGALORE BUNGALORE THE BUNGUS GUNG
 myCanvas = document.createElement('canvas')
 ctx = myCanvas.getContext('2d')
